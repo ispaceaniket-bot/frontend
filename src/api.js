@@ -188,7 +188,7 @@ export async function assignGP(caseId, gpData) {
 export const getMyCases = async () => {
   const token = localStorage.getItem("token");
 
-  const res = await fetch("https://backend-2e54.onrender.com/cases", {
+  const res = await fetch(`${BASE_URL}/cases`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
